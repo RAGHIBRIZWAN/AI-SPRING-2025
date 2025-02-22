@@ -154,6 +154,10 @@ There is an agent who can be intelligent and decide the best course of action in
 
 # QUESTION 5:
 
+### OUTPUT:
+
+![image](https://github.com/user-attachments/assets/b54dc97c-a2ff-4bb1-8e3c-c2ee6cd33638)
+
 ### **1. Paths and Costs Calculated by Each Algorithm**
 
 **Breadth-First Search (BFS)**
