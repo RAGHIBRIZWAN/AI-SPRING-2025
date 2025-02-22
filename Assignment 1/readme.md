@@ -83,3 +83,26 @@ Artificial Intelligence (AI) has made remarkable progress across different field
 - **Current Status:** Partially Achievable
 - **Overview:** Robotics and AI are being applied more in construction to perform activities like bricklaying and 3D printing of buildings. But complete automation of building construction continues to elude us.
    - **Challenges:** A construction site is a dynamic setting that calls for flexibility, thinking on your feet, and coordination across disciplines—tasks still largely reliant on human skills. 
+
+# QUESTION 3:
+
+### **Domain: Autonomous Cars**
+
+#### **Agent Description**
+An autonomous car is a smart agent that is programmed to drive on roads, obey traffic signals, and keep passengers safe without human interaction. The agent is aware of its surroundings through sensors like cameras, LiDAR, radar, and GPS. It analyzes this information utilizing machine learning algorithms, decision-making routines, and control mechanisms to define best driving actions like accelerating, braking, and steering.
+
+#### **Characterization of the Environment**
+- **Accessible vs. Inaccessible:** **Partially accessible** – The car is able to perceive a substantial part of its environment through sensors, but certain aspects (e.g., invisible obstacles, upcoming road conditions, or other drivers' intentions) are unknown.
+- **Deterministic vs. Stochastic:**
+**Stochastic** – The environment is random because of external influences such as pedestrian behavior, weather, and other driver behavior.
+- **Episodic vs. Sequential:**
+**Sequential** – Every decision affects subsequent states, so the agent has to take into account past and future actions at all times.
+- **Static vs. Dynamic:** **Dynamic** – The environment is always in flux as traffic, pedestrians, and road conditions change in real time.
+- **Discrete vs. Continuous:** **Continuous** – The agent has to process and react to continuous streams of sensor information, making decisions in real time regarding speed, lane position, and avoiding obstacles.
+
+#### **Best Agent Architecture**
+The best architecture for an autonomous vehicle is a **hybrid agent** that integrates several AI approaches:
+- **Perception Module:** Computer vision based on deep learning for object detection, lane detection, and pedestrian detection.
+- **Decision-Making Module:** Reinforcement learning and rule-based systems for navigation that is safe and efficient.
+- **Planning Module:** Path-planning algorithms such as A* or Rapidly-exploring Random Trees (RRT) to plan optimal routes.
+- **Control Module:** Adaptive control systems for smooth steering, acceleration, and braking adjustments.
