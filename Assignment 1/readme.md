@@ -159,3 +159,19 @@ It is possible that an environment has been set up such that all random actions 
 There is an agent who can be intelligent and decide the best course of action in more than one setting.
 
 **Example:** A driverless car can safely drive in a city and a small town. The regulations may vary (traffic lights versus stop signs), but as long as it is making the best decisions, it is still rational in both locations.
+
+# QUESTION 5:
+
+1. Paths and Costs Computed by Each Algorithm 
+Breadth-First Search (BFS) 
+• Path: ['Arad', 'Sibiu', 'Fagaras', 'Bucharest'] 
+• Total Cost: 450 
+Uniform Cost Search (UCS) 
+• Path: ['Arad', 'Sibiu', 'Rimnicu Vilcea', 'Pitesti', 'Bucharest'] 
+• Total Cost: 418 
+Greedy Best-First Search (GBFS) 
+• Path: ['Arad', 'Sibiu', 'Fagaras', 'Bucharest'] 
+• Total Cost: 450 
+Iterative Deepening Depth First Search (IDDFS) 
+• Path: ['Arad', 'Sibiu', 'Fagaras', 'Bucharest'] 
+• Total Cost: 450
