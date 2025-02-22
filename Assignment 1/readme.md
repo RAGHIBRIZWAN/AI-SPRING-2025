@@ -212,4 +212,4 @@ There is an agent who can be intelligent and decide the best course of action in
 
 ### **3. Conclusion: Choosing the Right Algorithm**
 
-To compute the least costly path, **Uniform Cost Search (UCS)** is most appropriate because it ensures an optimal cost solution. When cost is less important and speed is a priority, **Greedy Best-First Search (GBFS)** is an option that generates fast but potentially suboptimal solutions. **BFS** is more suited when it is important to reduce the number of steps to the minimum, whereas **IDDFS** is optimal when there is a constraint in memory.
+To compute the least costly path, Uniform Cost Search (UCS) is most appropriate because it ensures an optimal cost solution. When cost is less important and speed is a priority, Greedy Best-First Search (GBFS) is an option that generates fast but potentially suboptimal solutions. BFS is more suited when it is important to reduce the number of steps to the minimum, whereas IDDFS is optimal when there is a constraint in memory.
