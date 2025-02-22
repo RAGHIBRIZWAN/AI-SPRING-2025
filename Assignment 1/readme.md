@@ -38,13 +38,7 @@ Turing forecasted in his 1950 paper that by 2000, a computer would have a 30% ch
 
 # QUESTION 2:
 
-Here’s a refined and paraphrased version with slight improvements for clarity and flow:  
-
----
-
 ### Assessing AI’s Ability to Perform Various Tasks  
-
-Artificial Intelligence (AI) has made remarkable progress across different fields, yet its effectiveness varies depending on the task. Below is an evaluation of AI’s current capabilities in various areas, along with the challenges it faces in tasks that remain beyond its reach.
 
 1. **Playing Table Tennis at a Professional Level**
    - **Present Status:** Not Fully Achievable
@@ -107,9 +101,7 @@ The best architecture for an autonomous vehicle is a **hybrid agent** that integ
 - **Planning Module:** Path-planning algorithms such as A* or Rapidly-exploring Random Trees (RRT) to plan optimal routes.
 - **Control Module:** Adaptive control systems for smooth steering, acceleration, and braking adjustments.
 
-# QUESTION 5:
-
-Here are the answers in a straightforward manner, using examples that an average 6th-grade student can comprehend:
+# QUESTION 4:
 
 ### **1. An agent that receives only partial information about the state cannot be maximally rational.**
 **Answer:** **False**
