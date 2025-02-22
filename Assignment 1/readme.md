@@ -35,3 +35,51 @@ Since Turing’s time, new concerns have arisen due to rapid technological advan
 
 ### Assessing Turing's Forecasts
 Turing forecasted in his 1950 paper that by 2000, a computer would have a 30% chance of succeeding at a five-minute Turing Test when assessed by an untrained human. The forecast, however, turned out to be too optimistic. Computers as of 2000 were not sophisticated enough to pass the test reliably. While there has been much advancement in AI, being virtually indistinguishible from human conversation has proven elusive. In retrospect, Turing's prediction now appears optimistic based on the actual rate of technological progress.
+
+# QUESTION 2:
+
+Here’s a refined and paraphrased version with slight improvements for clarity and flow:  
+
+---
+
+### Assessing AI’s Ability to Perform Various Tasks  
+
+Artificial Intelligence (AI) has made remarkable progress across different fields, yet its effectiveness varies depending on the task. Below is an evaluation of AI’s current capabilities in various areas, along with the challenges it faces in tasks that remain beyond its reach.
+
+1. **Playing Table Tennis at a Professional Level**
+   - **Present Status:** Not Fully Achievable
+   - **Summary:** Although robots can play table tennis and respond with pre-plotted trajectories, competition at a high level is hard to achieve. The quick rate of the game and requirement of real-time improvisation pose extreme challenges.
+
+2. **Competing in a Game of Bridge**
+- **Current Status:** Achievable
+   - **Overview:** AI systems have been able to play bridge at a high level, using high-level algorithms to make strategic moves.
+
+3. **Writing a Humorous Story**
+   - **Current Status:** Not Yet Achievable
+- **Overview:** AI can create text in several styles, yet humor is a sophisticated task needing an understanding of context, cultural references, and wordplay.
+   - **Challenges:** Humor involves profound understanding of human emotions and lived experiences, domains where AI is still far behind.
+
+4. **Providing Expert Legal Advice in Specialized Fields**
+   - **Current Status:** Partially Achievable
+- **Overview:** AI is able to analyze legal documents and comment on given legal issues. Yet, providing completely trustworthy legal advice still necessitates human intelligence.
+   - **Challenges:** Legal argumentation requires subtle interpretation, situational understanding, and moral judgment—abilities that AI still has not mastered yet.
+
+5. **Finding and Establishing New Mathematical Theorems**
+   - **Current Status:** Partially Achievable
+- **Overview:** AI has helped establish proof for established theorems and even propose new ones. Still, original mathematical breakthroughs usually spring from human creativity and intuition.
+   - **Challenges:** Mathematics requires profound abstract thinking and innovative problem-solving, which is hard to replicate for AI.
+
+6. **Independently Performing Surgery**
+   - **Current Status:** Partially Achievable
+- **Overview:** Robotic surgery with the help of AI is common, with human surgeons controlling robotic systems for greater accuracy. Fully autonomous surgeries are still in the experimental phase.
+   - **Challenges:** Surgery demands real-time decision-making, flexibility, and dexterity, requiring human control.
+
+7. **Unloading Any Dishwasher in Any Household**
+   - **Current Status:** Not Yet Achievable
+- **Overview:** Robots are best at repetitive work in a controlled setting, but they are challenged by the unpredictability of home environments and dishwasher layouts.
+- **Challenges:** AI needs sophisticated perception, dexterity, and flexibility to cope with varying dishware configurations in various household environments.
+
+8. **Building a Building Autonomously**
+- **Current Status:** Partially Achievable
+- **Overview:** Robotics and AI are being applied more in construction to perform activities like bricklaying and 3D printing of buildings. But complete automation of building construction continues to elude us.
+   - **Challenges:** A construction site is a dynamic setting that calls for flexibility, thinking on your feet, and coordination across disciplines—tasks still largely reliant on human skills. 
