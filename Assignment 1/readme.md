@@ -166,67 +166,50 @@ There is an agent who can be intelligent and decide the best course of action in
 
 **Breadth-First Search (BFS)**
 
-**• Path: ['Arad', 'Sibiu', 'Fagaras', 'Bucharest']**
+- **• Path: ['Arad', 'Sibiu', 'Fagaras', 'Bucharest']**
 
-**• Total Cost: 450**
-
-**Uniform Cost Search (UCS)**
-
-**• Path: ['Arad', 'Sibiu', 'Rimnicu Vilcea', 'Pitesti', 'Bucharest']**
-
-**• Total Cost: 418**
-
-**Greedy Best-First Search (GBFS)**
-
-**• Path: ['Arad', 'Sibiu', 'Fagaras', 'Bucharest']**
-
-**• Total Cost: 450**
-
-**Iterative Deepening Depth First Search (IDDFS)**
-
-**• Path: ['Arad', 'Sibiu', 'Fagaras', 'Bucharest']**
-
-**• Total Cost: 450**
-
-### **2. Advantages and Disadvantages of Each Algorithm**
-
-**Breadth-First Search (BFS)**
-
-**• Advantages: Always finds shortest path (in terms of steps) if there is one.**
-
-**• Disadvantages: Does not take cost into account, takes up a lot of memory.**
-
-**• Best Used For: When finding shortest path in terms of steps is more crucial than cost.**
+- **• Total Cost: 450**
 
 **Uniform Cost Search (UCS)**
 
-**• Advantages: Always finds best path in terms of cost.**
+- **• Path: ['Arad', 'Sibiu', 'Rimnicu Vilcea', 'Pitesti', 'Bucharest']**
 
-**• Cons: Might be slow if there are numerous inexpensive routes.**
-
-**• Best Used For: When cost optimization is essential.**
+- **• Total Cost: 418**
 
 **Greedy Best-First Search (GBFS)**
 
-**• Pros: Quick and effective in most situations.**
+- **• Path: ['Arad', 'Sibiu', 'Fagaras', 'Bucharest']**
 
-**• Cons: Stuck in local optima, never ensures the optimal path.**
-
-**• Best Used For: When it is more important to have speed than optimality.**
+- **• Total Cost: 450**
 
 **Iterative Deepening Depth First Search (IDDFS)**
 
-**• Advantages: Less memory usage than BFS, completeness guaranteed.**
+- **• Path: ['Arad', 'Sibiu', 'Fagaras', 'Bucharest']**
 
-**• Disadvantages: Can be inefficient because of redundant calculations.**
+- **• Total Cost: 450**
 
-**• Best Used For: When memory usage is an issue.**
+### **2. Comparison of Strengths and Weaknesses of Search Algorithms**
 
-### **3. Conclusion: Best Algorithm for the Task**
+#### **Breadth-First Search (BFS)**
+- **Pros:** Guarantees finding the shortest path based on the number of moves.
+- **Cons:** Does not take into consideration the cost of paths and demands large amounts of memory.
+- **Best Use Case:** Is best when aiming to reduce steps instead of cost.
 
-For finding the cheapest path, Uniform Cost Search (UCS) is the best option since it provides the optimal cost solution. But if running time is an issue,
-main concern, Greedy Best-First Search (GBFS) can give quick but non-optimal
-results. BFS is appropriate when the number of steps is more important than cost, and IDDFS is
-appropriate when there are memory limitations.
-Therefore, the selection of the best algorithm relies on the particular requirements of the
-problem.
+#### **Uniform Cost Search (UCS)**
+- **Pros:** Identifies the cheapest route.
+- **Cons:** May be slow if there are numerous cheap routes.
+- **Best Use Case:** Most appropriate for applications where cost minimization is essential.
+
+#### **Greedy Best-First Search (GBFS)**
+- **Pros:** Typically fast and effective.
+- **Cons:** May become trapped in local optima and does not ensure the best route.
+- **Best Use Case:** Suits best when speed is more important than accuracy.
+
+#### **Iterative Deepening Depth-First Search (IDDFS)**
+- **Pros:** Consumes much less memory than BFS without compromising completeness.
+- **Cons:** Can be inefficient because it involves repeated computation.
+- **Best Use Case:** Is appropriate when memory saving is important.
+
+### **3. Conclusion: Choosing the Right Algorithm**
+
+To compute the least costly path, **Uniform Cost Search (UCS)** is most appropriate because it ensures an optimal cost solution. When cost is less important and speed is a priority, **Greedy Best-First Search (GBFS)** is an option that generates fast but potentially suboptimal solutions. **BFS** is more suited when it is important to reduce the number of steps to the minimum, whereas **IDDFS** is optimal when there is a constraint in memory.
