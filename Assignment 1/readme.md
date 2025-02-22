@@ -162,7 +162,7 @@ There is an agent who can be intelligent and decide the best course of action in
 
 # QUESTION 5:
 
-**1. Paths and Costs Calculated by Each Algorithm**
+### **1. Paths and Costs Calculated by Each Algorithm**
 
 **Breadth-First Search (BFS)**
 
@@ -184,27 +184,46 @@ There is an agent who can be intelligent and decide the best course of action in
 
 **Iterative Deepening Depth First Search (IDDFS)**
 
-• Path: ['Arad', 'Sibiu', 'Fagaras', 'Bucharest']
-• Total Cost: 450
-3. Advantages and Disadvantages of Each Algorithm
-Breadth-First Search (BFS)
-• Advantages: Always finds shortest path (in terms of steps) if there is one.
-• Disadvantages: Does not take cost into account, takes up a lot of memory.
-• Best Used For: When finding shortest path in terms of steps is more crucial
-than cost.
-Uniform Cost Search (UCS)
-• Advantages: Always finds best path in terms of cost.
-• Cons: Might be slow if there are numerous inexpensive routes.
-• Best Used For: When cost optimization is essential.
-Greedy Best-First Search (GBFS)
-• Pros: Quick and effective in most situations.
-• Cons: Stuck in local optima, never ensures the optimal path.
-• Best Used For: When it is more important to have speed than optimality.
-Iterative Deepening Depth First Search (IDDFS)
-• Advantages: Less memory usage than BFS, completeness guaranteed.
-• Disadvantages: Can be inefficient because of redundant calculations.
-• Best Used For: When memory usage is an issue.
-4. Conclusion: Best Algorithm for the Task
+**• Path: ['Arad', 'Sibiu', 'Fagaras', 'Bucharest']**
+
+**• Total Cost: 450**
+
+### **2. Advantages and Disadvantages of Each Algorithm**
+
+**Breadth-First Search (BFS)**
+
+**• Advantages: Always finds shortest path (in terms of steps) if there is one.**
+
+**• Disadvantages: Does not take cost into account, takes up a lot of memory.**
+
+**• Best Used For: When finding shortest path in terms of steps is more crucial than cost.**
+
+**Uniform Cost Search (UCS)**
+
+**• Advantages: Always finds best path in terms of cost.**
+
+**• Cons: Might be slow if there are numerous inexpensive routes.**
+
+**• Best Used For: When cost optimization is essential.**
+
+**Greedy Best-First Search (GBFS)**
+
+**• Pros: Quick and effective in most situations.**
+
+**• Cons: Stuck in local optima, never ensures the optimal path.**
+
+**• Best Used For: When it is more important to have speed than optimality.**
+
+**Iterative Deepening Depth First Search (IDDFS)**
+
+**• Advantages: Less memory usage than BFS, completeness guaranteed.**
+
+**• Disadvantages: Can be inefficient because of redundant calculations.**
+
+**• Best Used For: When memory usage is an issue.**
+
+### **3. Conclusion: Best Algorithm for the Task**
+
 For finding the cheapest path, Uniform Cost Search (UCS) is the best option since it provides the optimal cost solution. But if running time is an issue,
 main concern, Greedy Best-First Search (GBFS) can give quick but non-optimal
 results. BFS is appropriate when the number of steps is more important than cost, and IDDFS is
