@@ -106,3 +106,70 @@ The best architecture for an autonomous vehicle is a **hybrid agent** that integ
 - **Decision-Making Module:** Reinforcement learning and rule-based systems for navigation that is safe and efficient.
 - **Planning Module:** Path-planning algorithms such as A* or Rapidly-exploring Random Trees (RRT) to plan optimal routes.
 - **Control Module:** Adaptive control systems for smooth steering, acceleration, and braking adjustments.
+
+# QUESTION 5:
+
+Here are the answers in a straightforward manner, using examples that an average 6th-grade student can comprehend:
+
+---
+
+### **1. An agent that receives only partial information about the state cannot be maximally rational.**
+**Answer:** **False**
+
+Just because an agent does not have full knowledge of the environment, it is still capable of making the best decision with what it does know.
+
+**Example:** Suppose you are playing hide-and-seek in a large park. You don't see the whole park, but you do hear footsteps or observe moving shadows. Even with incomplete information, you can still make intelligent decisions to locate or evade other players.
+
+---
+
+### **2. There exist task environments in which no pure reflex agent can behave rationally.**
+**Answer:** **True**
+
+A **reflex agent** responds only to the present condition and does not recall what has happened before. There are certain environments where there is a need for planning, and hence the reflex agent will not work.
+
+**Example:** Consider a vacuum cleaner robot cleaning a room. If it responds only when it notices dirt (without recalling that it has cleaned there before), it may get stuck in the same place or miss some area. Here it would not be logical.
+
+---
+
+### **3. There is an environment of tasks where all agents are rational.**
+**Answer:** **False**
+
+Agents can act differently in the same environment. Some will make good decisions, while others will not.
+
+**Example:** Consider a math test where you must answer questions correctly. Some students study and pass, while others guess and fail. The test is the same for all, but not all are "rational" (making the best decisions).
+
+---
+
+### **4. The input to an agent program is the same as the input to the agent function.**
+**Answer:** **False**
+
+The **agent function** is the theoretical concept of how the agent makes a decision about what to do. The **agent program** is the specific code or process that implements the function. The inputs can be treated differently.
+
+**Example:** Consider a vending machine. The **agent function** is "if a coin is deposited and a button is pushed, dispense the snack." The **agent program** within the machine could also verify that the snack is available or that the coin is correct.
+
+---
+
+### **5. Every agent function is implementable by some program/machine combination.**
+**Answer:** **False**
+
+There are too many possible functions (ways of deciding things), and some are too complex for any computer to follow.  
+
+**Example:** Imagine a magical talking dog that can predict the future perfectly. In real life, no program or machine could actually copy that ability. Some things just can’t be programmed.  
+
+---
+
+### **6. If an agent chooses its action uniformly at random from among all possible actions, there is a deterministic task environment in which the agent is rational.**
+**Answer:** **True**
+
+It is possible that an environment has been set up such that all random actions end up resulting in a good state, so the random agent would be rational as well.
+
+**Example:** Consider a computer game where whether you push this button, or that one, you never lose. In that situation, even if the agent chooses randomly, it wins nonetheless!
+
+---
+
+### **7. It can be that for some agent, perfect rationality holds in two different task settings.**
+**Answer:** **True**
+
+There is an agent who can be intelligent and decide the best course of action in more than one setting.
+
+**Example:** A driverless car can safely drive in a city and a small town. The regulations may vary (traffic lights versus stop signs), but as long as it is making the best decisions, it is still rational in both locations.
