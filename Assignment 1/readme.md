@@ -162,17 +162,28 @@ There is an agent who can be intelligent and decide the best course of action in
 
 # QUESTION 5:
 
-1. Paths and Costs Calculated by Each Algorithm
+**1. Paths and Costs Calculated by Each Algorithm**
+
 **Breadth-First Search (BFS)**
+
 **• Path: ['Arad', 'Sibiu', 'Fagaras', 'Bucharest']**
+
 **• Total Cost: 450**
+
 **Uniform Cost Search (UCS)**
+
 **• Path: ['Arad', 'Sibiu', 'Rimnicu Vilcea', 'Pitesti', 'Bucharest']**
+
 **• Total Cost: 418**
+
 **Greedy Best-First Search (GBFS)**
+
 **• Path: ['Arad', 'Sibiu', 'Fagaras', 'Bucharest']**
+
 **• Total Cost: 450**
+
 **Iterative Deepening Depth First Search (IDDFS)**
+
 • Path: ['Arad', 'Sibiu', 'Fagaras', 'Bucharest']
 • Total Cost: 450
 3. Advantages and Disadvantages of Each Algorithm
