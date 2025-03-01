@@ -7,7 +7,7 @@ class MazeSolver:
         self.goals = set(goals)
         self.rows = len(maze)
         self.cols = len(maze[0])
-        self.directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]  # Right, Down, Left, Up
+        self.directions = [(0, 1), (1, 0), (0, -1), (-1, 0)]
 
     def is_valid(self, x, y):
         return 0 <= x < self.rows and 0 <= y < self.cols and self.maze[x][y] != '#'
