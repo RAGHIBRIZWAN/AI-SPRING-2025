@@ -309,7 +309,7 @@ print("A* Search Path:")
 astar_search(graph, 'A', 'F')
 ```
 
-# A start + Grid:
+# A star + Grid:
 
 ```py
 from queue import PriorityQueue
