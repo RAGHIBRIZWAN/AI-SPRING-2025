@@ -146,3 +146,86 @@ for gen in range(maxGen):
         newPop.append(child)
     popuation = newPop
 ```
+
+# TSP:
+
+```py
+import numpy as np
+import random
+
+# Distance matrix for 10 cities (symmetric TSP)
+distance_matrix = np.random.randint(10, 100, size=(10, 10))
+np.fill_diagonal(distance_matrix, 0)
+
+# Parameters
+N = 10
+pCount = 100
+maxGen = 100
+mutation_rate = 0.1
+
+# Generate Population
+def generate_population():
+    population = []
+    for _ in range(pCount):
+        chromosome = random.sample(range(N), N)  # Randomly shuffle cities
+        population.append(chromosome)
+    return population
+
+# Fitness Function
+def fitness(chromosome):
+    total_distance = 0
+    for i in range(N - 1):
+        total_distance += distance_matrix[chromosome[i], chromosome[i + 1]]
+    total_distance += distance_matrix[chromosome[-1], chromosome[0]]  # Returning to the starting city
+    return total_distance
+
+# Select the best two parents
+def select(population, fitness_scores):
+    sorted_population = sorted(zip(population, fitness_scores), key=lambda x: x[1])
+    parent1 = sorted_population[0][0]  # Best fitness
+    parent2 = sorted_population[1][0]  # Second best fitness
+    return parent1, parent2
+
+# Crossover: Single Point Crossover
+def crossover(p1, p2):
+    point = random.randint(0, N - 1)
+    child = p1[:point]
+    for gene in p2:
+        if gene not in child:
+            child.append(gene)
+    return child
+
+# Mutation: Swap two cities
+def mutate(chromosome):
+    i, j = random.sample(range(N), 2)
+    chromosome[i], chromosome[j] = chromosome[j], chromosome[i]
+    return chromosome
+
+# Genetic Algorithm Main Loop
+population = generate_population()
+
+for gen in range(maxGen):
+    fitness_scores = [fitness(individual) for individual in population]
+    best_fit = min(fitness_scores)
+    print(f"Generation: {gen} BestFit: {best_fit}")
+
+    if best_fit == 0:  # Ideal case (not likely for TSP)
+        break
+
+    new_population = []
+    for _ in range(pCount):
+        p1, p2 = select(population, fitness_scores)
+        child = crossover(p1, p2)
+        if random.random() < mutation_rate:
+            child = mutate(child)
+        new_population.append(child)
+
+    population = new_population
+
+# Output the solution
+best_index = fitness_scores.index(best_fit)
+solution = population[best_index]
+print(f"Solution: {solution}, Best fit: {best_fit}")
+print("Distance Matrix:")
+print(distance_matrix)
+```
