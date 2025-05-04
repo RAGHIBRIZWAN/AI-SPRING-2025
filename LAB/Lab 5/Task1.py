@@ -2,7 +2,6 @@ import chess
 import chess.engine
 
 def beam_search(board, beam_width, depth_limit):
-    # Initialize with the current board state and empty move sequence
     beam = [{
         'board': board.copy(),
         'moves': [],
@@ -15,12 +14,10 @@ def beam_search(board, beam_width, depth_limit):
         for candidate in beam:
             current_board = candidate['board']
             
-            # Skip if game is already over
             if current_board.is_game_over():
                 new_beam.append(candidate)
                 continue
                 
-            # Generate and evaluate all legal moves
             for move in current_board.legal_moves:
                 board_copy = current_board.copy()
                 board_copy.push(move)
@@ -32,16 +29,12 @@ def beam_search(board, beam_width, depth_limit):
                 }
                 new_beam.append(new_candidate)
         
-        # Sort candidates by score and keep only top beam_width candidates
-        # For opponent's turn, we'd minimize score, but for simplicity we'll assume it's our turn
         new_beam.sort(key=lambda x: x['score'], reverse=True)
         beam = new_beam[:beam_width]
         
-        # Early termination if we have a forced win
         if beam and beam[0]['board'].is_checkmate():
             break
     
-    # Return the best move sequence and its score
     if not beam:
         return [], 0
     
@@ -49,10 +42,6 @@ def beam_search(board, beam_width, depth_limit):
     return best_candidate['moves'], best_candidate['score']
 
 def evaluate_board(board):
-    """
-    Simple board evaluation function.
-    In practice, you'd use a more sophisticated evaluation or chess engine.
-    """
     if board.is_checkmate():
         if board.turn:  # Black just moved and gave checkmate
             return -9999
@@ -61,7 +50,6 @@ def evaluate_board(board):
     elif board.is_stalemate() or board.is_insufficient_material() or board.is_seventyfive_moves():
         return 0
     
-    # Very simple material evaluation
     piece_values = {
         chess.PAWN: 1,
         chess.KNIGHT: 3,
