@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import r2_score,mean_squared_error
+from sklearn.svm import SVC
+from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import LabelEncoder
 from sklearn.model_selection import train_test_split
 
@@ -41,20 +41,21 @@ le = LabelEncoder()
 df['email_text'] = le.fit_transform(df['email_text'])
 df['sender_address'] = le.fit_transform(df['sender_address'])
 
-model = LogisticRegression()
+model = SVC()
 
 x = df[['email_text','email_length','has_hyperlink','sender_address']]
 y = df['is_spam']
 
 X_train,X_test,Y_train,Y_test = train_test_split(x,y,test_size=0.2,random_state=42)
 
-model.fit(X_train,Y_train)
+svm = SVC(kernel='rbf', C=1, gamma='scale')
+svm.fit(X_train,Y_train)
 
-y_pred = model.predict(X_test)
+y_pred = svm.predict(X_test)
 
 print(f'Prdictions: {y_pred}')
 
-acc = r2_score(Y_test,y_pred)
+acc = accuracy_score(Y_test,y_pred)
 
 print(acc)
 
@@ -71,6 +72,6 @@ df1['sender_address'] = le.fit_transform(df1['sender_address'])
 
 x1 = df1[['email_text','email_length','has_hyperlink','sender_address']]
 
-y_pred1 = model.predict(x1)
+y_pred1 = svm.predict(x1)
 
 print(f'Prdictions: {y_pred1}')
